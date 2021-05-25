@@ -18,9 +18,9 @@ public class Program {
 		System.out.print("Enter account holder: ");
 		sc.nextLine();
 		String holder = sc.nextLine();
-		System.out.print("Is there an initional deposit (y/n)?");
-		char response = sc.next().charAt(0);
-		if(response == 'y') {
+		System.out.print("Is there an initional deposit (yes/no)?");
+		String response = sc.nextLine();
+		if(response == "yes") {
 			System.out.println("Enter initional deposit value: ");
 			double initionalDeposit = sc.nextDouble();
 			account = new Account (number, holder, initionalDeposit);
